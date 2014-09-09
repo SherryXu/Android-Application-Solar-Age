@@ -1,0 +1,270 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overallLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Age"
+        android:id="@+id/textView"
+        android:layout_marginLeft="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="39dp"
+        android:width="67dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/currentplanet"
+        android:id="@+id/textView2"
+        android:layout_toStartOf="@+id/editText3"
+        android:layout_toLeftOf="@+id/editText3"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/newplanet"
+        android:id="@+id/textView3"
+        android:layout_marginRight="49dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <RadioGroup
+        android:id="@+id/toggleplanet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2">
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mercury"
+            android:id="@+id/radioButton"
+            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/venus"
+            android:id="@+id/radioButton2"
+            android:layout_below="@+id/radioButton"
+            android:layout_alignLeft="@+id/radioButton"
+            android:layout_alignStart="@+id/radioButton"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/earth"
+            android:id="@+id/radioButton3"
+            android:layout_below="@+id/radioButton2"
+            android:layout_alignLeft="@+id/radioButton2"
+            android:layout_alignStart="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mars"
+            android:id="@+id/radioButton4"
+            android:layout_below="@+id/radioButton3"
+            android:layout_alignLeft="@+id/radioButton3"
+            android:layout_alignStart="@+id/radioButton3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jupiter"
+            android:id="@+id/radioButton5"
+            android:layout_below="@+id/radioButton4"
+            android:layout_alignLeft="@+id/radioButton4"
+            android:layout_alignStart="@+id/radioButton4"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saturn"
+            android:id="@+id/radioButton6"
+            android:layout_below="@+id/radioButton5"
+            android:layout_alignLeft="@+id/radioButton5"
+            android:layout_alignStart="@+id/radioButton5"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uranus"
+            android:id="@+id/radioButton7"
+            android:layout_below="@+id/radioButton6"
+            android:layout_alignLeft="@+id/radioButton6"
+            android:layout_alignStart="@+id/radioButton6"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/neptune"
+            android:id="@+id/radioButton8"
+            android:layout_below="@+id/radioButton7"
+            android:layout_alignLeft="@+id/radioButton7"
+            android:layout_alignStart="@+id/radioButton7"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <RadioGroup android:id="@+id/resultplanet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@id/textView3"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercury"
+            android:id="@+id/radioButton9"
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venus"
+            android:id="@+id/radioButton10"
+            android:layout_below="@+id/radioButton9"
+            android:layout_alignLeft="@+id/radioButton9"
+            android:layout_alignStart="@+id/radioButton9"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earth"
+            android:id="@+id/radioButton11"
+            android:layout_below="@+id/radioButton10"
+            android:layout_alignLeft="@+id/radioButton10"
+            android:layout_alignStart="@+id/radioButton10"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mars"
+            android:id="@+id/radioButton12"
+            android:layout_below="@+id/radioButton11"
+            android:layout_alignLeft="@+id/radioButton11"
+            android:layout_alignStart="@+id/radioButton11"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jupiter"
+            android:id="@+id/radioButton13"
+            android:layout_below="@+id/radioButton12"
+            android:layout_alignLeft="@+id/radioButton12"
+            android:layout_alignStart="@+id/radioButton12"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saturn"
+            android:id="@+id/radioButton14"
+            android:layout_below="@+id/radioButton13"
+            android:layout_alignLeft="@+id/radioButton13"
+            android:layout_alignStart="@+id/radioButton13"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uranus"
+            android:id="@+id/radioButton15"
+            android:layout_below="@+id/radioButton14"
+            android:layout_alignLeft="@+id/radioButton14"
+            android:layout_alignStart="@+id/radioButton14"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neptune"
+            android:id="@+id/radioButton16"
+            android:layout_below="@+id/radioButton15"
+            android:layout_alignLeft="@+id/radioButton15"
+            android:layout_alignStart="@+id/radioButton15"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"
+        android:id="@+id/button"
+        android:layout_toStartOf="@+id/resultplanet"
+        android:layout_toLeftOf="@+id/resultplanet"
+        android:layout_below="@+id/resultplanet"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/newage"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:width="67dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+</RelativeLayout>
